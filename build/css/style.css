@@ -1,0 +1,127 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+.menu {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: 18px 23px;
+  z-index: 4;
+}
+.menu__logo {
+  display: flex;
+}
+.menu__logo p {
+  color: #fff;
+  font-weight: 700;
+  text-transform: capitalize;
+  cursor: pointer;
+  transition-duration: 0.2s;
+}
+.menu__logo p:hover {
+  opacity: 0.8;
+}
+.menu__buttons {
+  display: flex;
+  box-sizing: border-box;
+}
+.menu__button {
+  margin: 0 10px;
+  border: 3px solid #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 6px 32px;
+  font-weight: 400;
+  color: #fff;
+  transition-duration: 0.2s;
+}
+.menu__button:hover {
+  background: #fff;
+  color: #333;
+}
+.header {
+  position: relative;
+  width: 100%;
+  height: 600px;
+  display: flex;
+  align-items: center;
+  padding-left: 70px;
+  box-sizing: border-box;
+}
+.header__background {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: linear-gradient(60deg, #27e7ff, #00ca52);
+  overflow: hidden;
+  transform: skewY(3deg) translateY(-80px);
+  z-index: -1;
+}
+.header__background:after {
+  content: '';
+  background: url("https://www.transparenttextures.com/patterns/dark-mosaic.png");
+  width: 800%;
+  position: absolute;
+  top: -400%;
+  right: -400%;
+  height: 800%;
+  opacity: 0.3;
+  animation-name: rotate;
+  animation-duration: 140s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+.header__title {
+  color: #fff;
+  z-index: 2;
+  display: inline-block;
+}
+.header__title h1 {
+  font-size: 90px;
+  font-weight: 900;
+  margin: 0;
+}
+.header__title p {
+  font-size: 20px;
+  font-weight: 400;
+}
+@-moz-keyframes rotate {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
+@-webkit-keyframes rotate {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
+@-o-keyframes rotate {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
+@keyframes rotate {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
