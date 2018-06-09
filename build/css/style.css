@@ -75,7 +75,7 @@ body {
   height: 800%;
   opacity: 0.3;
   animation-name: rotate;
-  animation-duration: 140s;
+  animation-duration: 440s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
 }
@@ -92,6 +92,48 @@ body {
 .header__title p {
   font-size: 20px;
   font-weight: 400;
+}
+.container {
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  height: 600px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+.container__slot {
+  position: relative;
+  height: 100%;
+  box-sizing: border-box;
+  width: 600px;
+  padding-right: 60px;
+  display: flex;
+  align-content: center;
+}
+.container__card {
+  display: block;
+  height: 100%;
+  width: 100%;
+  background-image: url("../../images/desktop.jpg");
+  background-size: cover;
+  position: absolute;
+  left: -100px;
+  border-radius: 13px;
+  box-shadow: inset 0 0 42px rgba(0,0,0,0.3);
+  transition-duration: 0.32s;
+  transition-timing-function: ease-in-out;
+}
+.container__card:hover {
+  left: -90px;
+}
+.container__text h1 {
+  font-size: 40px;
+  color: #333;
+}
+.container__text p {
+  color: #555;
 }
 @-moz-keyframes rotate {
   0% {
