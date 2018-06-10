@@ -81,7 +81,7 @@ body
 
 .container
 	width 100%
-	padding 20px
+	padding 20px 0 60px
 	box-sizing border-box
 	height 560px
 	box-sizing border-box
@@ -105,7 +105,7 @@ body
 		position absolute
 		left -100px
 		border-radius 13px
-		box-shadow inset 0 0 52px rgba(0, 0, 0, 0.1)
+		box-shadow inset 0 0 52px rgba(0, 0, 0, 0.07)
 		transition-duration .32s
 		transition-timing-function ease-in-out
 		&:hover
@@ -117,6 +117,65 @@ body
 		p
 			font-size 18px
 			color #777
+
+.pros
+	position relative
+	width 100%
+	padding 45px 0
+	height 200px
+	background #f7f7f7
+	display grid
+	grid-template 1fr / 1fr 1fr 1fr
+	background linear-gradient(60deg, #27e7ff, #00ca52)
+	z-index -1
+	overflow hidden
+	&:after
+		content ''
+		display block
+		background url('https://www.transparenttextures.com/patterns/dark-mosaic.png')
+		width 100%
+		position absolute
+		bottom 0
+		right 0
+		height 120%
+		opacity .24
+		animation-name floating
+		animation-duration 13s
+		animation-iteration-count infinite
+	&__slot
+		padding 8px
+		box-sizing border-box
+		width 100%
+		height 100%
+		display flex
+		align-items center
+		justify-content center
+		text-align center
+		flex-direction column
+		z-index 2
+	&__icon
+		width 120px
+		height 120px
+		color #222
+		background white
+		border 1px solid #fff
+		border-radius 100%
+		display flex 
+		justify-content center
+		align-items center
+		font-size 40px
+	&__content
+		width 100%
+		height 80px
+		color #222
+		h3
+			color #fff
+			margin 15px 0
+			font-size 22px
+			font-weight 800
+		p
+			color #fff
+			margin 0
 
 @keyframes rotate
 	0%
