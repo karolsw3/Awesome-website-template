@@ -58,16 +58,15 @@ body
 		&:after
 			content ''
 			background url('https://www.transparenttextures.com/patterns/dark-mosaic.png')
-			width 800%
+			width 100%
 			position absolute
-			top -400%
-			right -400%
-			height 800%
-			opacity .3
-			animation-name rotate
-			animation-duration 440s
+			top 0
+			right 0
+			height 120%
+			opacity .24
+			animation-name floating
+			animation-duration 13s
 			animation-iteration-count infinite
-			animation-timing-function linear
 	&__title
 		color white
 		z-index 2
@@ -123,3 +122,22 @@ body
 		transform rotateZ(0deg)
 	100%
 		transform rotateZ(360deg)
+
+.floating
+	animation-name floating
+	animation-duration 3s
+	animation-iteration-count infinite
+	&--slow
+		animation-duration 5s
+	&--normal
+		animation-duration 3s
+	&--fast
+		animation-duration 2s
+
+@keyframes floating
+	0%
+		transform translateY(0%)
+	50%
+		transform translateY(10%)
+	100%
+		transform translateY(0%)
