@@ -237,6 +237,13 @@ body {
   font-size: 1em;
   color: #999;
 }
+.quotes__author {
+  position: absolute;
+  bottom: 10px;
+  right: 20px;
+  color: #ccc;
+  font-style: italic;
+}
 .floating {
   animation-name: floating;
   animation-duration: 3s;
