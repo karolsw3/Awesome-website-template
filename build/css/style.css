@@ -138,13 +138,12 @@ body {
 .pros {
   position: relative;
   width: 100%;
-  padding: 45px 0;
+  padding: 65px 0;
   height: 200px;
   background: #f7f7f7;
   display: grid;
   grid-template: 1fr/1fr 1fr 1fr;
   background: linear-gradient(60deg, #27e7ff, #00ca52);
-  z-index: -1;
   overflow: hidden;
 }
 .pros:after {
@@ -184,6 +183,9 @@ body {
   justify-content: center;
   align-items: center;
   font-size: 40px;
+  transition-duration: 0.2s;
+  cursor: default;
+  box-shadow: 8px 8px 1px rgba(238,238,238,0.467);
 }
 .pros__content {
   width: 100%;
