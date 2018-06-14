@@ -204,7 +204,7 @@ body {
 }
 .quotes {
   width: 100%;
-  padding: 100px;
+  padding: 50px 100px;
   box-sizing: border-box;
 }
 .quotes__quote {
@@ -217,7 +217,7 @@ body {
   border-radius: 12px;
   padding: 10px;
   background: #fdfdfd;
-  box-shadow: 0 0 2px rgba(0,0,0,0.2);
+  box-shadow: 0 0 2px #00e088;
 }
 .quotes__quote:nth-child(even) {
   float: right;
