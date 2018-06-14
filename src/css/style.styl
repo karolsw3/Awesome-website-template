@@ -45,28 +45,8 @@ body
 	align-items center
 	padding-left 70px
 	box-sizing border-box
-	&__background
-		top 0
-		left 0
-		width 100%
-		height 100%
-		position absolute
-		background linear-gradient(60deg, #27e7ff, #00ca52)
-		overflow hidden
+	.proBackground
 		transform skewY(3deg) translateY(-80px)
-		z-index -1
-		&:after
-			content ''
-			background url('https://www.transparenttextures.com/patterns/dark-mosaic.png')
-			width 100%
-			position absolute
-			top 0
-			right 0
-			height 120%
-			opacity .24
-			animation-name floating
-			animation-duration 13s
-			animation-iteration-count infinite
 	&__title
 		color white
 		z-index 2
@@ -126,21 +106,6 @@ body
 	background #f7f7f7
 	display grid
 	grid-template 1fr / 1fr 1fr 1fr
-	background linear-gradient(60deg, #27e7ff, #00ca52)
-	overflow hidden
-	&:after
-		content ''
-		display block
-		background url('../../images/pattern.png')
-		width 100%
-		position absolute
-		bottom 0
-		right 0
-		height 120%
-		opacity .24
-		animation-name floating
-		animation-duration 13s
-		animation-iteration-count infinite
 	&__slot
 		padding 8px
 		box-sizing border-box
@@ -217,6 +182,27 @@ body
 		right 20px
 		color #ccc
 		font-style italic
+
+.proBackground
+	top 0
+	left 0
+	width 100%
+	height 100%
+	position absolute
+	background linear-gradient(60deg, #27e7ff, #00ca52)
+	overflow hidden
+	&:after
+		content ''
+		background url('https://www.transparenttextures.com/patterns/dark-mosaic.png')
+		width 100%
+		position absolute
+		top -10%
+		right 0
+		height 120%
+		opacity .24
+		animation-name floating
+		animation-duration 13s
+		animation-iteration-count infinite
 
 @keyframes rotate
 	0%
