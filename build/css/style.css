@@ -54,29 +54,8 @@ body {
   padding-left: 70px;
   box-sizing: border-box;
 }
-.header__background {
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  background: linear-gradient(60deg, #27e7ff, #00ca52);
-  overflow: hidden;
+.header .proBackground {
   transform: skewY(3deg) translateY(-80px);
-  z-index: -1;
-}
-.header__background:after {
-  content: '';
-  background: url("https://www.transparenttextures.com/patterns/dark-mosaic.png");
-  width: 100%;
-  position: absolute;
-  top: 0;
-  right: 0;
-  height: 120%;
-  opacity: 0.24;
-  animation-name: floating;
-  animation-duration: 13s;
-  animation-iteration-count: infinite;
 }
 .header__title {
   color: #fff;
@@ -143,22 +122,6 @@ body {
   background: #f7f7f7;
   display: grid;
   grid-template: 1fr/1fr 1fr 1fr;
-  background: linear-gradient(60deg, #27e7ff, #00ca52);
-  overflow: hidden;
-}
-.pros:after {
-  content: '';
-  display: block;
-  background: url("../../images/pattern.png");
-  width: 100%;
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  height: 120%;
-  opacity: 0.24;
-  animation-name: floating;
-  animation-duration: 13s;
-  animation-iteration-count: infinite;
 }
 .pros__slot {
   padding: 8px;
@@ -245,6 +208,86 @@ body {
   right: 20px;
   color: #ccc;
   font-style: italic;
+}
+.contact {
+  width: 100%;
+  position: relative;
+  display: flex;
+}
+.contact__form {
+  margin: 0 auto;
+  padding: 40px 20px;
+  min-width: 400px;
+  width: 50%;
+  max-width: 800px;
+  box-sizing: border-box;
+  z-index: 2;
+}
+.contact__header {
+  font-size: 32px;
+  font-weight: 800;
+  margin: 0 auto;
+  text-align: center;
+  color: #fff;
+  padding: 10px 0;
+}
+.contact__button,
+.contact__input,
+.contact__textarea {
+  margin: 20px 10px;
+  width: 100%;
+  text-align: left;
+  height: 45px;
+  font-size: 16px;
+  font-family: inherit;
+  border-radius: 5px;
+  background: #fff;
+  box-shadow: inset 0 0 4px #eee;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #222;
+  box-shadow: 0 0 2px #ddd;
+  border: none;
+}
+.contact__input {
+  padding: 15px;
+}
+.contact__textarea {
+  padding: 15px;
+  min-height: 300px;
+}
+.contact__button {
+  font-weight: 700;
+  text-align: center;
+  text-transform: capitalize;
+  cursor: pointer;
+  transition-duration: 0.2s;
+}
+.contact__button:hover {
+  opacity: 0.9;
+}
+.proBackground {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: linear-gradient(60deg, #27e7ff, #00ca52);
+  overflow: hidden;
+}
+.proBackground:after {
+  content: '';
+  background: url("https://www.transparenttextures.com/patterns/dark-mosaic.png");
+  width: 100%;
+  position: absolute;
+  top: -10%;
+  right: 0;
+  height: 120%;
+  opacity: 0.24;
+  animation-name: floating;
+  animation-duration: 13s;
+  animation-iteration-count: infinite;
 }
 .floating {
   animation-name: floating;
