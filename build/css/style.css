@@ -315,6 +315,16 @@ body {
 .floating--fast {
   animation-duration: 2s;
 }
+.revealOnScroll {
+  opacity: 0;
+}
+.revealAnimation {
+  animation-name: reveal;
+  animation-duration: 2.5s;
+  animation-iteration-count: 1;
+  animation-timing-function: cubic-bezier(0.83, -0.07, 0.28, 1.25);
+  animation-fill-mode: forwards;
+}
 @-moz-keyframes rotate {
   0% {
     transform: rotateZ(0deg);
@@ -389,5 +399,45 @@ body {
   }
   100% {
     transform: translateY(0%);
+  }
+}
+@-moz-keyframes reveal {
+  0% {
+    opacity: 0;
+    transform: scale(0.5, 0.5);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1, 1);
+  }
+}
+@-webkit-keyframes reveal {
+  0% {
+    opacity: 0;
+    transform: scale(0.5, 0.5);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1, 1);
+  }
+}
+@-o-keyframes reveal {
+  0% {
+    opacity: 0;
+    transform: scale(0.5, 0.5);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1, 1);
+  }
+}
+@keyframes reveal {
+  0% {
+    opacity: 0;
+    transform: scale(0.5, 0.5);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1, 1);
   }
 }
