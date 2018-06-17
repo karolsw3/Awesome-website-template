@@ -48,7 +48,7 @@ body {
 .header {
   position: relative;
   width: 100%;
-  height: 600px;
+  height: 750px;
   display: flex;
   align-items: center;
   padding-left: 70px;
@@ -75,7 +75,7 @@ body {
   width: 100%;
   padding: 20px 0 60px;
   box-sizing: border-box;
-  height: 560px;
+  height: 590px;
   box-sizing: border-box;
   display: flex;
   justify-content: left;
@@ -118,7 +118,7 @@ body {
   position: relative;
   width: 100%;
   padding: 65px 0;
-  height: 200px;
+  height: 240px;
   background: #f7f7f7;
   display: grid;
   grid-template: 1fr/1fr 1fr 1fr;
@@ -167,8 +167,9 @@ body {
 }
 .quotes {
   width: 100%;
-  padding: 50px 100px;
+  padding: 100px 100px;
   box-sizing: border-box;
+  background-image: url("../../images/background1.png");
 }
 .quotes__quote {
   margin-bottom: 50px;
@@ -181,6 +182,9 @@ body {
   padding: 10px;
   background: #fdfdfd;
   box-shadow: 0 0 2px #00e088;
+}
+.quotes__quote:last-child {
+  margin-bottom: 0;
 }
 .quotes__quote:nth-child(even) {
   float: right;
