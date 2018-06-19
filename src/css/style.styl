@@ -92,6 +92,7 @@ body
 		height 100%
 		box-sizing border-box
 		width 100%
+		max-width 600px
 		padding-right 60px
 		display flex
 		align-content center
@@ -368,3 +369,21 @@ body
 		&__goose
 			left -100px
 			bottom -168px
+
+@media screen and (max-width: 506px)
+	.quotes
+		&__quote
+			height 280px
+	.menu
+		&__buttons
+			display none
+	.header
+		padding 0 15px
+		&__title
+			h1
+				font-size 75px
+
+@media screen and (max-width: 460px)
+	.quotes
+		&__content
+			font-size 0.9em

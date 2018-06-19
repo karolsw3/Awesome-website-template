@@ -107,6 +107,7 @@ body {
   height: 100%;
   box-sizing: border-box;
   width: 100%;
+  max-width: 600px;
   padding-right: 60px;
   display: flex;
   align-content: center;
@@ -394,6 +395,25 @@ body {
   .header__goose {
     left: -100px;
     bottom: -168px;
+  }
+}
+@media screen and (max-width: 506px) {
+  .quotes__quote {
+    height: 280px;
+  }
+  .menu__buttons {
+    display: none;
+  }
+  .header {
+    padding: 0 15px;
+  }
+  .header__title h1 {
+    font-size: 75px;
+  }
+}
+@media screen and (max-width: 460px) {
+  .quotes__content {
+    font-size: 0.9em;
   }
 }
 @-moz-keyframes rotate {
