@@ -327,3 +327,17 @@ body
 	100%
 		opacity 1
 		transform scale(1, 1)
+
+@media screen and (max-width: 770px)
+	.container
+		height 800px
+		flex-direction column
+		&__card
+			left 0
+			bottom 0
+			&:hover
+				left 0
+				bottom 5px
+	.contact__form
+		width 75%
+

@@ -348,6 +348,23 @@ body {
   animation-timing-function: cubic-bezier(0.83, -0.07, 0.28, 1.25);
   animation-fill-mode: forwards;
 }
+@media screen and (max-width: 770px) {
+  .container {
+    height: 800px;
+    flex-direction: column;
+  }
+  .container__card {
+    left: 0;
+    bottom: 0;
+  }
+  .container__card:hover {
+    left: 0;
+    bottom: 5px;
+  }
+  .contact__form {
+    width: 75%;
+  }
+}
 @-moz-keyframes rotate {
   0% {
     transform: rotateZ(0deg);
