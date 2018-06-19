@@ -69,7 +69,9 @@ body {
   background-size: auto;
   width: 500px;
   position: absolute;
-  z-index: 0;
+  z-index: 1;
+  left: 0;
+  bottom: 0;
   height: 519px;
   background-size: contain;
 }
@@ -104,7 +106,7 @@ body {
   position: relative;
   height: 100%;
   box-sizing: border-box;
-  width: 600px;
+  width: 100%;
   padding-right: 60px;
   display: flex;
   align-content: center;
@@ -353,6 +355,9 @@ body {
     height: 800px;
     flex-direction: column;
   }
+  .container__slot {
+    padding-left: 25px;
+  }
   .container__card {
     left: 0;
     bottom: 0;
@@ -380,6 +385,15 @@ body {
   .container__slot {
     padding: 18px;
     text-align: center;
+  }
+}
+@media screen and (max-width: 520px) {
+  .quotes__quote {
+    height: 260px;
+  }
+  .header__goose {
+    left: -100px;
+    bottom: -168px;
   }
 }
 @-moz-keyframes rotate {
