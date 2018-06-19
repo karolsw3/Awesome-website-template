@@ -64,6 +64,15 @@ body {
   left: 0;
   z-index: 3;
 }
+.header__goose {
+  background: url("../../images/goose.png");
+  background-size: auto;
+  width: 500px;
+  position: absolute;
+  z-index: 0;
+  height: 519px;
+  background-size: contain;
+}
 .header .proBackground {
   transform: skewY(3deg) translateY(-80px);
 }
