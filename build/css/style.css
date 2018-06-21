@@ -279,7 +279,7 @@ body {
   font-size: 16px;
   font-family: inherit;
   border-radius: 5px;
-  background: #fff;
+  background: rgba(255,255,255,0.933);
   box-shadow: inset 0 0 4px #eee;
   display: flex;
   align-items: center;
@@ -365,7 +365,6 @@ body {
 }
 @media screen and (max-width: 770px) {
   .container {
-    height: 800px;
     flex-direction: column;
   }
   .container__slot {
@@ -398,6 +397,9 @@ body {
   .container__slot {
     padding: 18px;
     text-align: center;
+  }
+  .container__slot:first-child {
+    display: none;
   }
 }
 @media screen and (max-width: 520px) {
