@@ -214,7 +214,7 @@ body
 	&__form
 		margin 0 auto
 		padding 90px 20px
-		min-width 400px
+		min-width 350px
 		width 50%
 		max-width 800px
 		box-sizing border-box
@@ -392,9 +392,23 @@ body
 		padding 0 15px
 		&__title
 			h1
-				font-size 75px
+				font-size 72px
 
-@media screen and (max-width: 460px)
+@media screen and (max-width: 480px)
 	.quotes
 		&__content
 			font-size 0.9em
+
+@media screen and (max-width: 400px)
+	.quotes
+		&__quote
+			height 385px
+			box-sizing border-box
+	.pros
+		grid-template 1fr 1fr 1fr / 1fr
+		height auto
+	.header
+		padding 0 15px
+		&__title
+			h1
+				font-size 65px
