@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  overflow: hidden;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 .menu {
@@ -256,6 +257,17 @@ body {
   text-align: center;
   color: #fff;
   padding: 10px 0;
+}
+.contact__macaca {
+  background: url("../../images/macaca.png");
+  background-size: auto;
+  width: 498px;
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  bottom: 0;
+  height: 519px;
+  background-size: contain;
 }
 .contact__button,
 .contact__input,
